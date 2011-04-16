@@ -1,0 +1,14 @@
+<mtapp:setting
+    id="path_in_blog"
+    label="<__trans phrase="Area of Images">">
+    <input type="radio" name="path_in_blog" id="path_in_blog" value="0"<mt:unless name="path_in_blog"> checked="checked"</mt:unless> />
+    <label>&nbsp;<__trans phrase='Store in MT Static Area'>&nbsp;</label>
+    <input type="radio" name="path_in_blog" id="path_in_blog" value="1"<mt:if name="path_in_blog"> checked="checked"</mt:if> />
+    <label>&nbsp;<__trans phrase='Store in Blog Area'>&nbsp;</label>
+</mtapp:setting>
+<mtapp:setting
+  id='path_of_images'
+  label='<__trans phrase='Path of Images'>'
+  >
+    <input type="text" name="path_of_images" name="path_of_images" value="<mt:var name="path_of_images" escape="html">" />
+</mtapp:setting>

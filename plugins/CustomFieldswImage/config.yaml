@@ -1,0 +1,15 @@
+id  : CustomFieldswImage
+key : customfieldswimage
+name: CustomFields with Image
+version: 1.0
+l10n_class: CustomFieldswImage::L10N
+description: '<__trans phrase="Add Custom Field Type Radio &amp; CheckBox with Image.">'
+settings:
+    path_in_blog:
+        Default: 0
+        Scope: system
+    path_of_images:
+        Default: 'plugins/CustomFieldswImage/images/'
+        Scope: system
+system_config_template: system_config_template.tmpl
+customfield_types: $customfieldswimage::CustomFieldswImage::Field::_customfield_types
